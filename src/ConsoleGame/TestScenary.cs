@@ -17,11 +17,16 @@ namespace Program
             Minotaur minotaur = new Minotaur("Minotaur");
             Witch witch = new Witch("Witch");
             Pirate pirate = new Pirate("Pirate");
+            Troll troll = new Troll("Troll");
+            Wizard wizard = new Wizard("Wizard");
+            Elf elf = new Elf("Elf");
 
             characters.Add(witch);
             characters.Add(pirate);
             characters.Add(minotaur);
-
+            characters.Add(troll);
+            characters.Add(wizard);
+            characters.Add(elf);
 
             foreach (Character character in characters)
             {
