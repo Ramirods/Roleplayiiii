@@ -9,7 +9,7 @@ public class Armor: IDefenseItem
         {
             get
             {
-                return this.helmet.DefensePower + this.robes.DefensePower
+                return this.helmet.DefensePower + this.robes.DefensePower;
             }
         }    
     }

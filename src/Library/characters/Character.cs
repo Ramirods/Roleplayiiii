@@ -131,6 +131,11 @@ namespace RoleplayGame.Characters
             }
         }
 
+        public void HealthItself()
+        {
+            this.Health = 100;
+        }
+
         public override string ToString()
         {
             string items = "";
