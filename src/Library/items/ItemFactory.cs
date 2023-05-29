@@ -10,6 +10,9 @@ namespace RoleplayGame.Items
         Sword = 3,
         Shield = 4,
         Helmet = 5,
+        Armor = 6,
+        Stick = 7,
+        PowerGloves = 8,
     }
 
     /// <summary>
@@ -31,9 +34,23 @@ namespace RoleplayGame.Items
                 case ItemType.Sword: return new Sword();
                 case ItemType.Shield: return new Shield();
                 case ItemType.Helmet: return new Helmet();
+                case ItemType.Armor: return new Armor();
+                case ItemType.Stick: return new Stick();
+                case ItemType.PowerGloves: return new PowerGloves();
+
+
 
                 default: return null;
             }
         }
+
+        public static IItem GetRandomItem()
+        {
+            Random random = new Random();
+            Array values = Enum.GetValues(typeof(ItemType));
+            ItemType randomItemType = (ItemType)values.GetValue(random.Next(values.Length));
+            return GetItem(randomItemType);
+        }
+
     }
 }

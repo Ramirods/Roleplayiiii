@@ -1,18 +1,18 @@
 namespace RoleplayGame.Items
 {
-    public class Sword : IAttackItem
+    public class BreastPlate:IDefenseItem
     {
-        public int AttackPower
+        public int DefensePower
         {
             get
             {
-                return 57;
+                return 25;
             }
         }
 
         public override string ToString()
         {
-            return "Sword";
+            return "BreastPlate";
         }
     }
 }
